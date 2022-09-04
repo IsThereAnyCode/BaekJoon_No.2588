@@ -5,10 +5,19 @@
 //  Created by NoMore on 2022/09/04.
 //
 
+#include <stdio.h>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int main() {
+    int a, b;
+    
+    cin >> a >> b;
+    cout << a * (b % 10) << endl;
+    cout << a * ((b / 10) % 10) << endl;
+    cout << a * ( b / 100) << endl;
+    cout << a * b << endl;
+    
     return 0;
 }
